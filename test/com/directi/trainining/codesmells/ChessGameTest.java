@@ -1,6 +1,8 @@
 package com.directi.trainining.codesmells;
 
-import com.directi.training.codesmells.smelly.Position;
+import
+
+    com.directi.training.codesmells.smelly.Position;
 import com.directi.training.codesmells.smelly.chess.ChessBoard;
 import com.directi.training.codesmells.smelly.chess.GameEngine;
 import com.directi.training.codesmells.smelly.chess.Move;

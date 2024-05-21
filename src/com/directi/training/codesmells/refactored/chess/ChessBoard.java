@@ -19,6 +19,12 @@ public class ChessBoard
         resetBoard(); // Added later
     }
 
+    /**
+     * Això és un comentari Javadoc
+     * <p>
+     *Aquest mètode inicia el taulell de joc
+     * </p>
+     */
     private void initBoard()
     {
         for (int row = 0; row < BOARD_SIZE; row++) {
@@ -28,7 +34,13 @@ public class ChessBoard
             }
         }
     }
-
+    /**
+     * Això és un comentari Javadoc
+     * <p>
+     *Aquest mètode reinicia el taulell
+     *Coloca les peces dels dos jugadors a les posicions inicials
+     * </p>
+     */
     //Code smells solved: Duplicate code (within method) and long method.
     public void resetBoard()
     {
@@ -37,6 +49,12 @@ public class ChessBoard
         _kingDead = false;
     }
 
+    /**
+     * Això és un comentari Javadoc
+     * <p>
+     *Aquest mètode posa la peça indicada en el lloc indicat pel jugador
+     * </p>
+     */
     private void placePieces(Color color)
     {
         int pawnsRow, otherPiecesRow;

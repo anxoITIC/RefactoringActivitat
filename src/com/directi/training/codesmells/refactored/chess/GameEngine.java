@@ -5,6 +5,13 @@ import com.directi.training.codesmells.refactored.Position;
 
 import java.util.Scanner;
 
+/**
+ *
+ * @author Anxo Aragundi Mesías
+ *
+ * @see <a href="https://github.com/anxoITIC/RefactoringActivitat">GitHub Repository</a>
+ */
+
 public class GameEngine
 {
     private static final Scanner scanner = new Scanner(System.in);

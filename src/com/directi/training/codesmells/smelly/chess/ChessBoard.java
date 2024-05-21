@@ -19,7 +19,12 @@ public class ChessBoard
         _board = new Cell[8][8];
         initBoard();
     }
-
+    /**
+     * Això és un comentari Javadoc
+     * <p>
+     *Aquest mètode inicia el taulell de joc
+     * </p>
+     */
     private void initBoard()
     {
         for (int row = 0; row < 8; row++) {
@@ -29,7 +34,6 @@ public class ChessBoard
             }
         }
     }
-
     public Cell[][] getBoard()
     {
         return _board;
@@ -43,6 +47,12 @@ public class ChessBoard
                 || position.getColumn() >= 8);
     }
 
+    /**
+     * Això és un comentari Javadoc
+     * <p>
+     *Aquest mètode mira si la posició indicada està buida
+     * </p>
+     */
     public boolean isEmpty(Position position)
     {
         return isPositionOutOfBounds(position) || getCell(position).isEmpty();
@@ -126,6 +136,12 @@ public class ChessBoard
         return new Position(from.getRow() + direction.getRowOffset(), from.getColumn() + direction.getColumnOffset());
     }
 
+    /**
+     * Això és un comentari Javadoc
+     * <p>
+     *Aquest mètode mou la peça indicada en el lloc indicat pel jugador
+     * </p>
+     */
     public void movePiece(int fromRow, int fromColumn, int toRow, int toColumn)
     {
         Position from = new Position(fromRow, fromColumn);
